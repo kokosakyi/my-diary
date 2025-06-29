@@ -15,4 +15,4 @@ node_modules
 # Local Netlify folder
 .DS_Store
 
-/generated/prisma
+# Prisma client is now in node_modules
