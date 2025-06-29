@@ -13,10 +13,12 @@
   "dependencies": {
     "@netlify/functions": "^2.6.0",
     "@netlify/remix-adapter": "^2.3.1",
+    "@prisma/client": "^6.10.1",
     "@remix-run/node": "^2.16.8",
     "@remix-run/react": "^2.16.8",
     "@remix-run/serve": "^2.16.8",
-    "isbot": "^4.1.0"
+    "isbot": "^4.1.0",
+    "prisma": "^6.10.1"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.16.8",

@@ -1,10 +1,18 @@
 node_modules
 
 /.cache
-/public/build
 /build
+/public/build
+/.netlify
 .env
 
+# Database
+/prisma/dev.db
+/prisma/dev.db-journal
+/dev.db
+/dev.db-journal
+
 # Local Netlify folder
-.netlify
 .DS_Store
+
+/generated/prisma
