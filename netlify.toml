@@ -1,5 +1,5 @@
 [build]
-command = "rm -rf node_modules/.prisma && npm ci && npx prisma generate && npx prisma db push --accept-data-loss && npm run build"
+command = "npm ci && npx prisma generate && npx prisma db push --accept-data-loss && npm run build"
 publish = "build/client"
 
 [functions]
@@ -8,7 +8,10 @@ included_files = ["node_modules/@prisma/client/**", "node_modules/.prisma/**", "
 # Force a clean build by invalidating cache
 [build.environment]
 NODE_ENV = "production"
-NETLIFY_CACHE_ID = "prisma-v1"
+NETLIFY_CACHE_ID = "prisma-v2"
+# Disable Prisma's Netlify detection
+NETLIFY = ""
+NETLIFY_DEV = ""
 
 [dev]
 command = "npm run dev"
