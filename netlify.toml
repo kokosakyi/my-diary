@@ -14,3 +14,7 @@ for = "/build/*"
 [headers.values]
 
 "Cache-Control" = "public, max-age=31560000, immutable"
+
+# Environment variables for Supabase
+[build.environment]
+  NODE_ENV = "production"

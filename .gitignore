@@ -5,6 +5,7 @@ node_modules
 /public/build
 /.netlify
 .env
+.env.local
 
 # Database
 /prisma/dev.db
@@ -15,4 +16,5 @@ node_modules
 # Local Netlify folder
 .DS_Store
 
-# Prisma client is now in node_modules
+# Prisma generated files
+/generated/

@@ -1,12 +1,9 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
@@ -14,8 +11,10 @@ model DiaryEntry {
   id        String   @id @default(cuid())
   title     String
   content   String
-  mood      String? /// Optional mood tracking
-  tags      String? /// Comma-separated tags
+  /// Optional mood tracking
+  mood      String?
+  /// Comma-separated tags
+  tags      String?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
